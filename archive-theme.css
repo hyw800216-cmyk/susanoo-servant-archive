@@ -1,0 +1,231 @@
+/* The archive is a distinct material world: a dark lacquer frame around a warm manuscript. */
+#archive{--paper:#e9ddc4;--paper-light:#f4ecda;--ink:#2c2527;--ink-soft:#65554f;--seal:#852d35;--rule:#bda784;--antique:#876e4c;position:relative;color:var(--ink);background:#171015;isolation:isolate;font-family:'Noto Serif SC','Songti SC','STSong','SimSun',serif}
+#archive:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 10% 10%,#56303b 0,transparent 28%),linear-gradient(110deg,#1a1018,#24151c 40%,#100d12)}
+#archive .container{width:min(1100px,calc(100% - 64px));margin-inline:auto}
+#archive .archive-top{position:sticky;top:0;z-index:20;height:72px;padding:0 max(calc((100vw - 1100px)/2),32px);gap:30px;background:rgba(35,23,25,.96);border-bottom:1px solid #b69b7070;color:#e4d2b7;backdrop-filter:blur(14px)}
+#archive .archive-top .brand{color:#f0dfc7;font-size:15px;letter-spacing:.25em;white-space:nowrap}
+#archive .archive-top .brand span{color:#ae765e}
+#archive .archive-top nav{gap:clamp(14px,3vw,36px)}
+#archive .archive-top nav a{color:#cbb99d;letter-spacing:.14em;font-size:13px;transition:color .2s}
+#archive .archive-top nav a:hover{color:#fff0d2}
+#archive .replay{color:#bea790;font-size:11px;white-space:nowrap}
+#archive .intro,#archive .section.container,#archive .treasure-section>.container,#archive .archive-page,#archive .bond-section{position:relative;isolation:isolate;background:var(--paper);box-shadow:0 22px 65px #0006;border-left:1px solid #f8efdd75;border-right:1px solid #644d3670}
+#archive .intro:before,#archive .section.container:before,#archive .treasure-section>.container:before,#archive .archive-page:before,#archive .bond-section:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 10% 5%,#fff8e4a8,transparent 27%),radial-gradient(ellipse at 93% 20%,#a8886040,transparent 28%),repeating-linear-gradient(92deg,transparent 0 3px,#52372707 4px,transparent 5px 17px),linear-gradient(90deg,#ab8f6f35,transparent 6%,transparent 94%,#a6886b38)}
+#archive .intro{padding:85px clamp(26px,7vw,90px) 70px;margin-top:60px;overflow:hidden}
+#archive .intro:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #8c735225;border-radius:50%;right:-240px;top:110px;box-shadow:0 0 0 25px #ffffff00,0 0 0 26px #8c73521a,0 0 0 65px #ffffff00,0 0 0 66px #8c73521a;pointer-events:none}
+#archive .intro-label{font:10px/1.4 Georgia,serif;letter-spacing:.3em;color:#907958;border-bottom:1px solid #b8a37d;padding-bottom:21px}
+#archive .intro-label span{color:var(--seal)}
+#archive .intro-grid{display:grid;grid-template-columns:1.1fr .85fr;gap:9%;padding:70px 0 65px}
+#archive .red-label{color:#923b3d;font:10px/1.4 Georgia,serif;letter-spacing:.26em}
+#archive .intro h2{color:#241b20;font-size:clamp(40px,5.4vw,76px);line-height:1.35;letter-spacing:.1em;margin:28px 0 24px}
+#archive .intro h2 em{color:#823340;font-style:normal}
+#archive .intro-text{font-size:16px;line-height:2.25;color:#6c5850}
+#archive .seal{width:52px;height:52px;margin-top:35px;border:1px solid #9b4d4d;color:#913b3b;background:#902d3210}
+#archive .profile{position:relative;z-index:1;border-top:2px solid #8c4643;border-bottom:1px solid #bfa88a;padding:25px 0}
+#archive .profile-top{font:10px/1.6 Georgia,serif;color:#987a62}
+#archive .profile h3{font-size:clamp(28px,3.3vw,42px);color:#311f25;margin:33px 0 8px;letter-spacing:.18em}
+#archive .profile-en{font:10px/1.5 Georgia,serif;color:#977f71}
+#archive .facts{gap:17px 22px;margin:32px 0}
+#archive .facts div{border-bottom:1px solid #bfa990;padding-bottom:12px}
+#archive .facts span,#archive .wish small{color:#97786c;font-size:12px}
+#archive .facts b{color:#3c3030;font-size:15px}
+#archive .wish{border-color:#9b4a46;color:#4a3836}
+#archive .wish p{color:#594743;font-size:15px}
+#archive .stats{border-color:#ad9476;background:#e1d2b9a8}
+#archive .stats div{border-color:#bfa990;padding:23px 8px}
+#archive .stats small{color:#8e7364;font-size:12px}
+#archive .stats strong{color:#713139;font-size:28px}
+#archive .section.container,#archive .treasure-section>.container,#archive .bond-section{padding:100px clamp(26px,7vw,90px);border-top:1px solid #b39c79}
+#archive .section-heading{align-items:end;margin-bottom:55px;padding-bottom:24px;border-bottom:1px solid #ad9679}
+#archive .section-heading h2{color:#2c2224;font-size:clamp(32px,4.5vw,52px)}
+#archive .section-heading>p{color:#8b7265}
+#archive .section-caption{font-size:19px;color:#4c292d;border-bottom:2px solid #7e3739}
+#archive .section-caption span{color:#a18b74;font:10px Georgia,serif;letter-spacing:.2em}
+#archive .skill{border-color:#bca88c}
+#archive .skill summary{padding:25px 4px;color:#35252b;transition:color .2s,background .2s}
+#archive .skill summary:hover{color:#8d373a;background:#a55a4810}
+#archive .skill-title{font-size:clamp(18px,2.1vw,23px);font-weight:600}
+#archive .skill-rank{font:italic 22px Georgia,serif;color:#923d40}
+#archive .skill-toggle{color:#93636a;transition:transform .3s}
+#archive .skill-inner{display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,1.5fr);gap:8%;padding:14px 3px 44px}
+#archive .epigraph{color:#8c4c4c;border-left:2px solid #a57864;font-size:15px;line-height:2.15;padding-left:20px;font-style:italic}
+#archive .prose{color:#443636;line-height:2.2;font-size:16px;letter-spacing:.045em;white-space:pre-wrap;overflow-wrap:anywhere}
+#archive .treasure-section{padding:0;background:transparent;border:0}
+#archive .treasure-section>.container{border-top:2px solid #6d3038}
+#archive .archive-page,#archive .bond-section{padding:100px clamp(26px,7vw,90px);margin-inline:auto}
+#archive .archive-page h2,#archive .bond-section h2{color:#352329;font-size:clamp(30px,4vw,48px);letter-spacing:.15em}
+#archive .archive-page p,#archive .bond-section p{color:#493a37;line-height:2.15}
+#archive .archive-entry{white-space:pre-wrap;font-size:16px;line-height:2.2;color:#463634;overflow-wrap:anywhere}
+#archive .bond-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+#archive .bond-card{border:1px solid #bca68a;background:#f5ead6b3;padding:26px}
+#archive .bond-card h3{color:#823b3d;font-size:19px;margin:0 0 14px}
+#archive .footer{color:#dfcfb7;padding:80px 0 100px;gap:24px}
+#archive .footer p{color:#bca78d}
+#archive .footer strong{color:#f1e3cd}
+#archive .footer-meta,#archive .footer button{color:#bea992}
+#archive button:focus-visible,#archive a:focus-visible{outline:2px solid #8c3a3d;outline-offset:4px}
+@media(max-width:700px){
+ #archive .container{width:calc(100% - 24px)}
+ #archive .archive-top{height:auto;min-height:68px;padding:14px 16px;gap:12px;flex-wrap:wrap}
+ #archive .archive-top .brand{font-size:12px;letter-spacing:.13em}
+ #archive .archive-top nav{gap:13px}
+ #archive .archive-top nav a{font-size:12px;letter-spacing:0}
+ #archive .replay{font-size:10px}
+ #archive .intro{margin-top:12px;padding-top:52px}
+ #archive .intro-grid{grid-template-columns:1fr;padding:42px 0;gap:35px}
+ #archive .intro h2{font-size:clamp(37px,10vw,58px)}
+ #archive .stats{grid-template-columns:repeat(3,1fr)}
+ #archive .stats div:nth-child(-n+3){border-bottom:1px solid #bfa990}
+ #archive .section.container,#archive .treasure-section>.container,#archive .archive-page,#archive .bond-section{padding:65px 25px}
+ #archive .section-heading{display:block;margin-bottom:38px}
+ #archive .section-heading>p{text-align:left}
+ #archive .skill-inner{grid-template-columns:1fr;gap:22px}
+ #archive .prose,#archive .archive-entry{font-size:15px;line-height:2.05}
+ #archive .bond-list{grid-template-columns:1fr}
+ #archive .footer{padding:60px 12px 90px}
+}
+
+/* Reading scale: keep the manuscript atmosphere while giving long passages room. */
+#archive .archive-top nav a{font-size:15px}
+#archive .intro-text{font-size:18px;line-height:2.1}
+#archive .facts span,#archive .wish small,#archive .stats small{font-size:14px;color:#765e55}
+#archive .facts b,#archive .wish p{font-size:17px;line-height:1.85;overflow-wrap:anywhere}
+#archive .section-heading>p{font-size:16px;line-height:2;color:#715b51}
+#archive .section-caption{font-size:21px}
+#archive .section-caption span{font-size:12px}
+#archive .skill-title{font-size:clamp(21px,2.25vw,25px)}
+#archive .skill-rank{font-size:24px}
+#archive .skill-inner{grid-template-columns:minmax(190px,.7fr) minmax(0,1.55fr);gap:7%;padding-bottom:54px}
+#archive .epigraph{font-size:17px;line-height:2;overflow-wrap:anywhere}
+#archive .prose,#archive .archive-entry{font-size:19px;line-height:2.05;letter-spacing:.025em;color:#3a3030}
+#archive .bond-card summary{font-size:20px;line-height:1.6;color:#762f37;cursor:pointer}
+#archive .bond-card .prose{margin-top:18px}
+#archive .footer p{font-size:16px}
+#archive .footer-meta{font-size:11px}
+@media(max-width:700px){
+ #archive .archive-top{row-gap:10px}
+ #archive .archive-top .brand{font-size:14px}
+ #archive .archive-top nav{gap:clamp(10px,3vw,18px);flex-wrap:wrap}
+ #archive .archive-top nav a{font-size:14px}
+ #archive .intro-text{font-size:17px}
+ #archive .facts span,#archive .wish small,#archive .stats small{font-size:13px}
+ #archive .facts b,#archive .wish p{font-size:16px}
+ #archive .skill-title{font-size:20px}
+ #archive .skill-rank{font-size:21px}
+ #archive .skill-inner{grid-template-columns:1fr;gap:24px}
+ #archive .epigraph{font-size:16px;line-height:2}
+ #archive .prose,#archive .archive-entry{font-size:18px;line-height:2;letter-spacing:.015em}
+ #archive .bond-card{padding:20px}
+ #archive .bond-card summary{font-size:19px}
+}
+@media(max-width:380px){
+ #archive .archive-top{justify-content:center}
+ #archive .archive-top .brand{width:100%;text-align:center}
+ #archive .archive-top nav{margin-left:0;justify-content:center}
+ #archive .section.container,#archive .treasure-section>.container,#archive .bond-section{padding-inline:20px}
+}
+/* A printed frontispiece gives the left column a continuing visual anchor. */
+#archive .intro-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:7%}
+#archive .intro-grid>div:first-child{position:sticky;top:110px;align-self:start}
+#archive .archive-portrait{margin:34px 0 0;width:min(100%,310px);padding:8px;background:#2a1b22;box-shadow:0 15px 28px #3a272b35}
+#archive .archive-portrait img{display:block;width:100%;height:auto}
+#archive .archive-portrait figcaption{padding:10px 4px 4px;color:#d4bea2;font:9px Georgia,serif;letter-spacing:.13em;text-align:center}
+#archive .fact-long{grid-column:1/-1}
+@media(max-width:700px){#archive .intro-grid{grid-template-columns:1fr}#archive .intro-grid>div:first-child{position:static}#archive .archive-portrait{width:min(75%,280px)}}
+.final-entry{position:relative;text-align:center;padding:95px 24px 110px;color:#e7d7c6;border-top:1px solid #a6826a44;background:radial-gradient(ellipse at 50% 100%,#56344788,transparent 60%)}.final-entry span{font:11px Georgia,serif;color:#bf9f87;letter-spacing:.28em}.final-entry h2{font-weight:400;font-size:clamp(27px,3.5vw,46px);letter-spacing:.15em;margin:25px auto 32px}.final-entry button{padding:13px 22px;border:1px solid #c9a78288;background:#1a1117a8;color:#ebd9c5;font-family:serif;letter-spacing:.2em;cursor:pointer}.final-entry button:hover,.final-entry button:focus-visible{color:white;border-color:#f3d9ad}
+
+/* Open the record across the page instead of dedicating a column to a cover. */
+#archive .intro-grid{display:block;padding:55px 0 65px}
+#archive .intro-grid>.intro-opening{position:relative;top:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.75fr);column-gap:7%;align-items:end;margin-bottom:48px;padding:0 0 30px;border-bottom:1px solid #b8a37d70}
+#archive .intro-opening .red-label{grid-column:1/-1;margin:0}
+#archive .intro-opening h2{margin:18px 0 0}
+#archive .intro-opening .intro-text{margin:0 0 7px;padding-left:22px;border-left:1px solid #a27467}
+#archive .intro-opening .seal{position:absolute;right:10px;top:0;margin:0;opacity:.65}
+#archive .profile{padding:25px 0 30px}
+#archive .profile h3{margin-top:22px}
+#archive .facts{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 32px;margin:32px 0}
+#archive .facts .fact-long{grid-column:span 2}
+#archive .facts div{min-width:0}
+#archive .wish{padding-top:3px;padding-bottom:3px}
+@media(max-width:700px){#archive .intro-grid{padding:38px 0}#archive .intro-grid>.intro-opening{display:block;margin-bottom:35px;padding-bottom:26px}#archive .intro-opening h2{margin:20px 0}#archive .intro-opening .intro-text{padding-left:16px}#archive .intro-opening .seal{right:8px;top:10px;width:38px;height:38px}#archive .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}#archive .facts .fact-long{grid-column:1/-1}}
+
+/* Ukiyo-e plates sit in the manuscript margins, apart from readable text. */
+#archive .myth-print{margin:0 0 48px;border-block:1px solid #a78c6e;display:grid;overflow:hidden;background:#e4d4b9}
+#archive .myth-print-image{position:relative;overflow:hidden;background:#211b20}
+#archive .myth-print-image img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.76) sepia(.12)}
+#archive .myth-print figcaption{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:22px;color:#563637}
+#archive .myth-print figcaption span{font:10px Georgia,serif;letter-spacing:.17em;color:#a06756}
+#archive .myth-print figcaption strong{font-size:24px;letter-spacing:.2em;font-weight:500}
+#archive .myth-print figcaption small{font-size:12px;line-height:1.8;color:#806557}
+#archive .myth-print-wide{grid-template-columns:minmax(0,2.9fr) minmax(170px,1fr);height:240px}
+#archive .myth-print-wide .myth-print-image img{object-position:center 53%}
+#archive .myth-print-note{grid-template-columns:140px 1fr;max-width:480px;height:150px;margin-left:auto;background:#dfcfb584}
+#archive .myth-print-note .myth-print-image img{object-position:center 58%}
+#archive .myth-print-note figcaption{gap:5px;padding:15px 22px}
+#archive .myth-print-note figcaption strong{font-size:20px}
+#archive .myth-print-note figcaption p{margin:4px 0 0;font-size:13px;line-height:1.65;color:#806557}
+@media(max-width:700px){#archive .myth-print-wide{grid-template-columns:1fr;height:auto}#archive .myth-print-wide .myth-print-image{height:160px}#archive .myth-print-wide figcaption{padding:14px 18px;gap:4px}#archive .myth-print figcaption strong{font-size:19px}#archive .myth-print-note{grid-template-columns:105px 1fr;width:100%;height:132px}#archive .myth-print-note figcaption{padding:10px 16px}#archive .myth-print-note figcaption p{display:none}}
+
+/* Traditional prints become part of the manuscript rather than separate illustrations. */
+#archive .intro:before{background:linear-gradient(90deg,#efe4d1f5 8%,#eddfcaed 44%,#e8d8c0b8 100%),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat 100% 0% / min(83%,750px) auto,radial-gradient(ellipse at 10% 5%,#fff8e4,transparent 55%);}
+#archive #skills:before{background:linear-gradient(90deg,#eee1cef5 0%,#eaddc9d9 50%,#e9d9c1b5 100%),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat 100% 15% / min(88%,780px) auto,#e9ddc4;}
+#archive .treasure-section>.container:before{background:linear-gradient(90deg,#eaddc9ed 0%,#eaddc9d6 44%,#eaddc9b8 100%),url("assets/found/yoshitoshi-orochi.jpg") no-repeat 100% 0% / min(100%,900px) auto,#e9ddc4;}
+#archive .bond-section:before{background:linear-gradient(90deg,#eadfcdf5 0%,#eadbc7dc 52%,#e9d8c1b8 100%),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat 100% 10% / min(92%,850px) auto,#e9ddc4;}
+#archive .bond-card{background:#f4e8d4d9}
+/* Skill narratives share the printed paper; the text stands above a translucent ink illustration. */
+.pv-paper{isolation:isolate;overflow:hidden}
+.pv-paper:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#f3e8d3f5 0%,#f3e8d3e8 50%,#ecdcc3c9 100%),url("assets/found/yoshitoshi-orochi.jpg") no-repeat right 5% / min(105%,850px) auto;}
+.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,#f3e8d3f5 0%,#f3e8d3e8 50%,#ecdcc3c9 100%),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat right 5% / min(105%,850px) auto;}
+@media(max-width:700px){#archive .intro:before,#archive #skills:before,#archive .treasure-section>.container:before,#archive .bond-section:before{background-size:auto,140% auto,auto;background-position:center,center 15%,center}.pv-paper:after{background-size:auto,150% auto;background-position:center,center 5%}}
+
+/* Painted margins: alternating prints travel across the manuscript while a warm veil keeps ink legible. */
+#archive .intro:before{background:linear-gradient(90deg,#f1e5d2a8 0%,#f0e4d1cf 32%,#f0e2cfc9 70%,#e9d9bfaa 100%),url("assets/found/yoshitoshi-orochi.jpg") no-repeat left 62% / min(70%,700px) auto,url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat right top / min(75%,730px) auto,#e9ddc4}
+#archive #skills:before{background:linear-gradient(90deg,#eee1cda8,#eee1cdd1 40%,#ebdcc7c7 68%,#e8d8c0a8),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat left 35% / min(70%,700px) auto,url("assets/found/yoshitoshi-orochi.jpg") no-repeat right 0% / min(76%,760px) auto,#e9ddc4}
+#archive .treasure-section>.container:before{background:linear-gradient(90deg,#ecdfcbb0,#ecdfcbd4 43%,#ecdfc9c9 70%,#e9d9c1ad),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat left 64% / min(68%,680px) auto,url("assets/found/yoshitoshi-orochi.jpg") no-repeat right 3% / min(81%,810px) auto,#e9ddc4}
+#archive .bond-section:before{background:linear-gradient(90deg,#eee1cda9,#eee1cdd1 37%,#eadbc7c7 70%,#e8d8c1aa),url("assets/found/yoshitoshi-orochi.jpg") no-repeat left 62% / min(72%,720px) auto,url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat right 3% / min(78%,780px) auto,#e9ddc4}
+.pv-paper:after{background:linear-gradient(90deg,#f3e8d3b8,#f3e8d3d8 38%,#f3e8d3d0 68%,#ecdcc3b4),url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat left 82% / min(76%,680px) auto,url("assets/found/yoshitoshi-orochi.jpg") no-repeat right 1% / min(84%,760px) auto,#ebddc5}
+.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,#f3e8d3b6,#f3e8d3d8 38%,#f3e8d3d0 68%,#ecdcc3b5),url("assets/found/yoshitoshi-orochi.jpg") no-repeat left 80% / min(76%,680px) auto,url("assets/found/susanoo-dragon-kuniyoshi.jpg") no-repeat right 1% / min(84%,760px) auto,#ebddc5}
+@media(max-width:700px){#archive .intro:before,#archive #skills:before,#archive .treasure-section>.container:before,#archive .bond-section:before,.pv-paper:after,.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background-size:auto,105% auto,105% auto,auto;background-position:center,left 62%,right 3%,center}}
+
+/* Each plate fades independently into the paper, without rectangular picture edges. */
+#archive .intro:before,#archive #skills:before,#archive .treasure-section>.container:before,#archive .bond-section:before{z-index:-2;background:linear-gradient(90deg,#efe2ceb8,#efe2cfd5 43%,#ecddc8b8),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#e9ddc4}
+#archive #skills:before,#archive .bond-section:before{background:linear-gradient(90deg,#efe2ceb8,#efe2cfd5 43%,#ecddc8b8),url("assets/found/yoshitoshi-orochi.jpg") center/cover no-repeat,#e9ddc4}
+#archive .intro:after,#archive #skills:after,#archive .treasure-section>.container:after,#archive .bond-section:after{content:"";position:absolute;inset:0;width:auto;height:auto;top:0;right:0;z-index:-1;pointer-events:none;border:0;border-radius:0;box-shadow:none;opacity:.46;background:url("assets/found/yoshitoshi-orochi.jpg") left 57% / min(76%,760px) auto no-repeat;mask-image:radial-gradient(ellipse 38% 30% at 17% 57%,#000 12%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 38% 30% at 17% 57%,#000 12%,transparent 100%)}
+#archive #skills:after,#archive .bond-section:after{background-image:url("assets/found/susanoo-dragon-kuniyoshi.jpg")}
+.pv-paper:after,.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,#f3e8d3bd,#f3e8d3dd 43%,#ecdcc3b8),url("assets/found/yoshitoshi-orochi.jpg") center/cover no-repeat,#ebddc5}
+.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,#f3e8d3bd,#f3e8d3dd 43%,#ecdcc3b8),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#ebddc5}
+@media(max-width:700px){#archive .intro:after,#archive #skills:after,#archive .treasure-section>.container:after,#archive .bond-section:after{background-size:120% auto;mask-image:radial-gradient(ellipse 55% 26% at 10% 57%,#000 8%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 55% 26% at 10% 57%,#000 8%,transparent 100%)}}
+/* The secondary print also covers its layer, so its natural border cannot cut across the page. */
+#archive .intro:after,#archive #skills:after,#archive .treasure-section>.container:after,#archive .bond-section:after{background-size:cover;background-position:center}
+@media(max-width:700px){#archive .intro:after,#archive #skills:after,#archive .treasure-section>.container:after,#archive .bond-section:after{background-size:cover;background-position:center}}
+
+/* Warm vellum behind text: retain the prints at the margins while protecting reading contrast. */
+#archive .profile,#archive .skill-list,#archive .section-heading,#archive .bond-list{position:relative;isolation:isolate}
+#archive .profile:before,#archive .skill-list:before,#archive .section-heading:before,#archive .bond-list:before{content:"";position:absolute;z-index:-1;inset:-20px -24px;pointer-events:none;background:radial-gradient(ellipse 80% 75% at 50% 50%,rgba(242,229,206,.96) 0%,rgba(242,229,206,.94) 58%,rgba(242,229,206,.72) 82%,transparent 100%)}
+#archive .facts span,#archive .wish small,#archive .stats small{color:#5e443b}
+#archive .facts b,#archive .wish p{color:#271c1d}
+#archive .profile-en,#archive .profile-top{color:#6d5146}
+#archive .intro-text,#archive .section-heading>p{color:#503b35}
+#archive .bond-card{background:rgba(245,232,211,.94)}
+.pv-paper:after{background:linear-gradient(90deg,rgba(242,230,209,.94) 0%,rgba(242,230,209,.92) 58%,rgba(236,221,198,.78) 100%),url("assets/found/yoshitoshi-orochi.jpg") center/cover no-repeat,#ebddc5}
+.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,rgba(242,230,209,.94) 0%,rgba(242,230,209,.92) 58%,rgba(236,221,198,.78) 100%),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#ebddc5}
+@media(max-width:700px){#archive .profile:before,#archive .skill-list:before,#archive .section-heading:before,#archive .bond-list:before{inset:-14px -16px;background:radial-gradient(ellipse 105% 80% at 50% 50%,rgba(242,229,206,.97) 0%,rgba(242,229,206,.95) 65%,rgba(242,229,206,.75) 85%,transparent 100%)}}
+
+/* Let the existing print remain visible through the writing field. */
+#archive .profile:before,#archive .skill-list:before,#archive .section-heading:before,#archive .bond-list:before{background:radial-gradient(ellipse 88% 82% at 50% 50%,rgba(244,229,205,.62) 0%,rgba(244,229,205,.58) 60%,rgba(244,229,205,.38) 85%,transparent 100%)}
+#archive .bond-card{background:rgba(245,232,211,.72)}
+.pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/yoshitoshi-orochi.jpg") center/cover no-repeat,#ebddc5}
+.pv-storm .pv-paper:after,.pv-descent .pv-paper:after,.pv-eye .pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#ebddc5}
+@media(max-width:700px){#archive .profile:before,#archive .skill-list:before,#archive .section-heading:before,#archive .bond-list:before{background:radial-gradient(ellipse 105% 80% at 50% 50%,rgba(244,229,205,.72),rgba(244,229,205,.68) 65%,rgba(244,229,205,.43) 86%,transparent)}}
+#archive .intro:before,#archive .treasure-section>.container:before{background:linear-gradient(90deg,rgba(239,226,206,.66),rgba(239,226,207,.69) 48%,rgba(236,221,200,.64)),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#e9ddc4}
+#archive #skills:before,#archive .bond-section:before{background:linear-gradient(90deg,rgba(239,226,206,.66),rgba(239,226,207,.69) 48%,rgba(236,221,200,.64)),url("assets/found/yoshitoshi-orochi.jpg") center/cover no-repeat,#e9ddc4}
+
+/* The images follow the story told in each section, under the same warm-paper veil. */
+#archive #skills:before{background:linear-gradient(90deg,rgba(239,226,206,.69),rgba(239,226,207,.73) 48%,rgba(236,221,200,.67)),url("assets/found/toshimasa-iwato.jpg") center/cover no-repeat,#e9ddc4}
+#archive .treasure-section>.container:before{background:linear-gradient(90deg,rgba(239,226,206,.69),rgba(239,226,207,.73) 48%,rgba(236,221,200,.67)),url("assets/found/kuniteru-inadahime.jpg") center/cover no-repeat,#e9ddc4}
+#archive .bond-section:before{background:linear-gradient(90deg,rgba(239,226,206,.69),rgba(239,226,207,.73) 48%,rgba(236,221,200,.67)),url("assets/found/chikanobu-kushinada.jpg") center/cover no-repeat,#e9ddc4}
+#archive .intro:after,#archive #skills:after,#archive .treasure-section>.container:after,#archive .bond-section:after{background-image:none}
+.pv-ward .pv-paper:after,.pv-exile .pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/toshimasa-iwato.jpg") center/cover no-repeat,#ebddc5}
+.pv-storm .pv-paper:after,.pv-guardian .pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/susanoo-dragon-kuniyoshi.jpg") center/cover no-repeat,#ebddc5}
+.pv-blade .pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/kuniteru-inadahime.jpg") center/cover no-repeat,#ebddc5}
+.pv-dual .pv-paper:after,.pv-descent .pv-paper:after{background:linear-gradient(90deg,rgba(242,229,207,.80),rgba(242,229,207,.76) 56%,rgba(236,219,195,.68)),url("assets/found/chikanobu-kushinada.jpg") center/cover no-repeat,#ebddc5}

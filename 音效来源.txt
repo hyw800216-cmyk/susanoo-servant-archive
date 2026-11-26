@@ -1,0 +1,22 @@
+音效来源与处理
+
+雷雨：Caesar, Rain and thunder，公共领域。
+https://commons.wikimedia.org/wiki/File:Rain_and_thunder.ogg
+
+火焰：Work With Sounds / Werstas，录音 Kimmo Kestinen，WWS Bonfireburning，CC BY 4.0。
+https://commons.wikimedia.org/wiki/File:WWS_Bonfireburning.ogg
+https://creativecommons.org/licenses/by/4.0/
+网站中调整了播放音量、时长与淡出；素材文件本身未编辑。
+
+电流：stephan, Aggressive electric buzzing，公共领域。
+https://commons.wikimedia.org/wiki/File:Aggressive_electric_buzzing.ogg
+补充素材：
+荒神神相海浪影像，Buket Ülkü / Pexels: https://www.pexels.com/video/dramatic-ocean-waves-in-stormy-weather-32697115/
+神临人间雨林影像，Aduri Prem Kumar / Pexels: https://www.pexels.com/video/wet-trees-brought-by-rainfall-3603737/
+素材使用说明：https://www.pexels.com/license/
+天羽羽斩主题为歌川国芳《武勇见立十二支·辰／素盏雄尊》神话画，不是神剑实物：https://commons.wikimedia.org/wiki/File:Tatsu_%E8%BE%B0_(Dragon)_(BM_2008,3037.01003).jpg
+
+新增浮世绘素材：
+春斋年昌《岩户神乐之起显》：https://commons.wikimedia.org/wiki/File:Amaterasu_cave.JPG
+丰原周延《素盏鸣尊救栉名田姬》：https://commons.wikimedia.org/wiki/File:Susanoo_rescues_Kushinada_Hime_by_Toyohara_Chikanobu_1886.jpg
+歌川国辉《牛头天皇与稻田姬》：https://commons.wikimedia.org/wiki/File:11.36845-Utagawa_Kuniteru_I-Museum_of_Fine_Art_Boston.jpg

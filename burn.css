@@ -1,0 +1,16 @@
+/* A page burns from the lower-right corner into the archive. */
+.burn-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 1000ms cubic-bezier(.22,.65,.3,1);
+}
+.burn-transition canvas { display: block; width: 100%; height: 100%; }
+.burn-transition.is-fading { opacity: 0; }
+.burn-transition.is-reduced { background: #130c11; transition-duration: 280ms; }
+@media (prefers-reduced-motion: reduce) {
+  .burn-transition { transition-duration: 280ms; }
+}
